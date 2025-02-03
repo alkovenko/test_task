@@ -8,5 +8,8 @@ class Weapon:
     @classmethod
     def from_dict(cls, data):
         return cls(
-            data["name"], data["description"], data["damage"], data["hitProbability"]
+            data["name"],
+            data["description"],
+            data["damage"],
+            data.get("hit_probability", data.get("hitProbability")),
         )

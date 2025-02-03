@@ -10,7 +10,7 @@ class DungeonController:
         self.__dungeon = dungeon_map
         self.__position = 0
         self.__player = self.generate_character(player_generator)
-        self.__room_generator = RoomGenerator("game/text_data/room_data.json")
+        self.__room_generator = RoomGenerator("text_data/room_data.json")
         self.__enemy_generator = enemy_generator
         self.__game_running = True
         self.__room_descriptions = {}
